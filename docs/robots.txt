@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wenjiejiang413.github.io/session-risk-checklist-cn/sitemap.xml
