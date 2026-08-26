@@ -1,0 +1,9 @@
+{
+  "credentials": "no",
+  "ownership": "own",
+  "payment": "clear",
+  "delivery": "clear",
+  "aftersales": "both",
+  "tracking": "yes",
+  "claims": "no"
+}
