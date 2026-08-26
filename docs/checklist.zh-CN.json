@@ -1,0 +1,77 @@
+{
+  "$schema": "../schema/checklist.schema.json",
+  "id": "session-risk-checklist-cn",
+  "version": "1.0.0",
+  "language": "zh-CN",
+  "updated": "2026-08-26",
+  "disclaimer": "结果仅用于提示明显风险，不验证身份、资金来源、履约能力或平台风控。",
+  "thresholds": {
+    "high": 9,
+    "check": 4
+  },
+  "questions": [
+    {
+      "id": "credentials",
+      "question": "服务方是否要求提供密码、验证码、Session、Cookie、Token、恢复码或设备控制权？",
+      "options": [
+        { "value": "no", "label": "没有", "weight": 0 },
+        { "value": "unknown", "label": "不确定", "weight": 3, "note": "对方没有明确承诺不索取登录凭证" },
+        { "value": "yes", "label": "有", "weight": 10, "critical": true, "note": "对方要求提交登录凭证或设备控制权" }
+      ]
+    },
+    {
+      "id": "ownership",
+      "question": "是否明确知道最终交付到哪个账号？",
+      "options": [
+        { "value": "own", "label": "本人现有账号", "weight": 0 },
+        { "value": "new", "label": "明确的独立新账号", "weight": 1, "note": "需确认最终控制权与历史记录迁移边界" },
+        { "value": "unclear", "label": "共享或不清楚", "weight": 3, "note": "账号归属不清楚，或实际交付为共享入口、镜像入口或 API" }
+      ]
+    },
+    {
+      "id": "payment",
+      "question": "付款前是否写清完整价格、收款对象与支付方式？",
+      "options": [
+        { "value": "clear", "label": "都已写清", "weight": 0 },
+        { "value": "partial", "label": "只说了一部分", "weight": 1, "note": "价格、收款对象或支付方式仍有缺项" },
+        { "value": "unclear", "label": "没有", "weight": 2, "note": "付款信息不透明" }
+      ]
+    },
+    {
+      "id": "delivery",
+      "question": "是否写清交付对象、预计时间的起算点与验收标准？",
+      "options": [
+        { "value": "clear", "label": "都已写清", "weight": 0 },
+        { "value": "vague", "label": "只有笼统描述", "weight": 1, "note": "交付时间或验收标准仍然模糊" },
+        { "value": "none", "label": "没有", "weight": 2, "note": "没有可核对的交付与验收标准" }
+      ]
+    },
+    {
+      "id": "aftersales",
+      "question": "是否分别说明最终未成功与成功后异常的处理规则？",
+      "options": [
+        { "value": "both", "label": "两种都写清", "weight": 0 },
+        { "value": "one", "label": "只写了一种", "weight": 1, "note": "失败处理与成功后售后只写明一种" },
+        { "value": "none", "label": "都没写", "weight": 2, "note": "未写明失败退款与成功后售后边界" }
+      ]
+    },
+    {
+      "id": "tracking",
+      "question": "付款后是否有独立订单号和查询入口？",
+      "options": [
+        { "value": "yes", "label": "两者都有", "weight": 0 },
+        { "value": "manual", "label": "只能问客服", "weight": 1, "note": "订单状态只能通过客服人工询问" },
+        { "value": "no", "label": "没有", "weight": 2, "note": "付款后没有独立订单与查询记录" }
+      ]
+    },
+    {
+      "id": "claims",
+      "question": "页面是否使用无条件安全承诺，却没有可核对的规则？",
+      "options": [
+        { "value": "no", "label": "没有", "weight": 0 },
+        { "value": "unknown", "label": "不确定", "weight": 1, "note": "宣传承诺与实际规则的对应关系不清楚" },
+        { "value": "yes", "label": "有", "weight": 3, "note": "存在无法核对的绝对安全或零风险承诺" }
+      ]
+    }
+  ]
+}

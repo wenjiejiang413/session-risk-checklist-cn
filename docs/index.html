@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第三方服务凭证风险核验｜Session Risk Checklist CN</title>
+  <meta name="description" content="7 项本地核验第三方服务是否索取密码、验证码、Session、Cookie 或 Token，并检查账号归属、交付、退款与订单查询信息。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://wenjiejiang413.github.io/session-risk-checklist-cn/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="第三方服务凭证风险核验">
+  <meta property="og:description" content="结构化、可复核、只在浏览器本地计算的 7 项安全清单。">
+  <meta property="og:url" content="https://wenjiejiang413.github.io/session-risk-checklist-cn/">
+  <link rel="icon" href="./favicon.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Session Risk Checklist CN",
+    "url": "https://wenjiejiang413.github.io/session-risk-checklist-cn/",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "Any",
+    "isAccessibleForFree": true,
+    "softwareVersion": "1.0.0",
+    "codeRepository": "https://github.com/wenjiejiang413/session-risk-checklist-cn",
+    "creator": {
+      "@type": "Organization",
+      "name": "MixLivo",
+      "url": "https://mixlivo.com/"
+    }
+  }
+  </script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Session Risk Checklist CN 首页">
+      <img src="./favicon.png" width="34" height="34" alt="">
+      <span>Session Risk Checklist CN</span>
+    </a>
+    <nav aria-label="主要导航">
+      <a href="https://github.com/wenjiejiang413/session-risk-checklist-cn">源代码</a>
+      <a href="https://mixlivo.com/guides/chatgpt-session-security?utm_source=github_pages&amp;utm_medium=tool&amp;utm_campaign=session_risk_checklist&amp;utm_content=header">会话安全说明</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <p class="eyebrow">LOCAL-ONLY SECURITY CHECK</p>
+        <h1>第三方服务凭证风险核验</h1>
+        <p class="lede">回答 7 个问题，检查对方是否索取登录凭证，以及账号归属、收款、交付、退款、售后和查单信息是否完整。</p>
+      </div>
+      <dl class="privacy-facts">
+        <div><dt>不上传答案</dt><dd>所有选项只在当前浏览器中计算</dd></div>
+        <div><dt>不填写账号</dt><dd>不需要邮箱、订单号或联系方式</dd></div>
+        <div><dt>规则完全公开</dt><dd>问题、权重和阈值均可在 GitHub 核验</dd></div>
+      </dl>
+    </section>
+
+    <section class="tool-layout" aria-labelledby="checklist-title">
+      <div class="checklist-panel">
+        <div class="progress-row">
+          <div><p class="section-label">CHECKLIST</p><h2 id="checklist-title">7 项核验</h2></div>
+          <span data-progress>正在加载规则</span>
+        </div>
+        <form data-form></form>
+      </div>
+
+      <aside class="result-panel" data-result aria-live="polite">
+        <p class="section-label">RESULT</p>
+        <h2>结果会显示在这里</h2>
+        <p>回答全部问题后生成风险提示。低风险结果也不代表安全认证。</p>
+      </aside>
+    </section>
+
+    <section class="method">
+      <div>
+        <p class="section-label">BOUNDARY</p>
+        <h2>这份清单能做什么</h2>
+      </div>
+      <div class="method-copy">
+        <p>它检查你所选择的信息中是否存在明显红线或重要缺口，但无法验证商家身份、付款来源、实际履约或平台后续风控。</p>
+        <p>密码、验证码、Cookie、Session、Token、恢复码和设备控制权，都不属于普通订单核验应当索取的信息。</p>
+        <a class="text-link" href="https://mixlivo.com/tools/gpt-daichong-risk-check?utm_source=github_pages&amp;utm_medium=tool&amp;utm_campaign=session_risk_checklist&amp;utm_content=method">查看 MixLivo 在线版本与完整说明</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>由 MixLivo 内容组维护。MixLivo 是独立第三方，与 OpenAI 不存在隶属、代理或官方授权关系。</p>
+    <p><a href="https://help.openai.com/en/articles/20001257-managing-active-sessions-in-chatgpt">OpenAI 活动会话</a><a href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html">OWASP 会话管理</a><a href="https://github.com/wenjiejiang413/session-risk-checklist-cn/blob/main/LICENSE">MIT License</a></p>
+  </footer>
+</body>
+</html>

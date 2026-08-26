@@ -55,7 +55,9 @@ node src/cli.js examples/critical-risk.json --json
 
 ## 在线版本
 
-不想运行命令行时，可以使用由维护方提供的[浏览器本地风险核验工具](https://mixlivo.com/tools/gpt-daichong-risk-check?utm_source=github&utm_medium=repository&utm_campaign=session_risk_checklist&utm_content=readme)。选项只在当前页面计算，不要求输入登录凭证或个人信息。
+不想运行命令行时，可以打开 [GitHub Pages 在线演示](https://wenjiejiang413.github.io/session-risk-checklist-cn/)。选项只在当前页面计算，不要求输入登录凭证或个人信息。
+
+需要更完整的页面说明时，可查看维护方提供的 [MixLivo 浏览器本地风险核验工具](https://mixlivo.com/tools/gpt-daichong-risk-check?utm_source=github&utm_medium=repository&utm_campaign=session_risk_checklist&utm_content=readme)。
 
 ## 安全原则
 

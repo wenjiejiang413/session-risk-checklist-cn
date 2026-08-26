@@ -5,8 +5,10 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "build:docs": "node scripts/build-docs.js",
     "test": "node --test",
-    "check:examples": "node src/cli.js examples/lower-risk.json && node src/cli.js examples/critical-risk.json --json"
+    "check:examples": "node src/cli.js examples/lower-risk.json && node src/cli.js examples/critical-risk.json --json",
+    "verify": "npm run build:docs && npm test && npm run check:examples"
   },
   "engines": {
     "node": ">=18"
